@@ -2,6 +2,8 @@
 <html lang="ru" prefix="og: https://ogp.me/ns#">
 
 <head>
+  <base href="https://hutt4.github.io/remont-v-rnd/">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -116,6 +118,13 @@
   </script>
 
   <!-- Скрипты, стили -->
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Внутренние -->
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/main.js" defer></script>
 </head>
@@ -216,7 +225,7 @@
 
       <section class="about">
         <div class="container">
-          <div class="title__block">
+          <div class="title__block title__block--left">
             <h2 class="title">Почему именно мы?</h2>
             <p class="subtitle">Опыт, надежность и внимание к деталям</p>
           </div>
@@ -307,7 +316,7 @@
               <tr class="services__highlight">
                 <td><strong>Ремонт домов и квартир под ключ</strong></td>
                 <td>—</td>
-                <td>Индив.</td>
+                <td><span class="services__invid" data-full="Индивидуально" data-short="Индив."></span></td>
               </tr>
             </tbody>
           </table>
@@ -315,6 +324,93 @@
           <div class="services__note">
             <p>💡 Окончательная стоимость рассчитывается после осмотра объекта. Возможны скидки при больших объемах
               работ</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <div class="container">
+          <div class="title__block">
+            <h2 class="title">Наши работы</h2>
+            <p class="subtitle">Реальные фото объектов, выполненных в Ростове-на-Дону</p>
+          </div>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/works/1.jpg" data-fancybox="gallery" alt="works-1">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/works/2.jpg" data-fancybox="gallery" alt="works-2">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/works/3.jpg" data-fancybox="gallery" alt="works-3">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/works/4.jpg" data-fancybox="gallery" alt="works-4">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/works/5.jpg" data-fancybox="gallery" alt="works-5">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/works/6.jpg" data-fancybox="gallery" alt="works-6">
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/works/7.jpg" data-fancybox="gallery" alt="works-7">
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <div class="title__block">
+            <h2 class="title">Наши преимущества</h2>
+            <p class="subtitle">Почему клиенты выбирают нас</p>
+          </div>
+
+          <div class="advantages__grid">
+            <div class="advantages__item">
+              <img src="/img/icons/clock.svg" alt="Соблюдение сроков">
+              <h3>Соблюдаем сроки</h3>
+              <p>Все работы выполняем точно в оговоренные сроки.</p>
+            </div>
+
+            <div class="advantages__item">
+              <img src="/img/icons/quality.svg" alt="Качество работ">
+              <h3>Высокое качество</h3>
+              <p>Используем проверенные материалы и профессиональные инструменты.</p>
+            </div>
+
+            <div class="advantages__item">
+              <img src="/img/icons/clean.svg" alt="Аккуратность">
+              <h3>Аккуратно и чисто</h3>
+              <p>Оставляем после себя чистоту и порядок.</p>
+            </div>
+
+            <div class="advantages__item">
+              <img src="/img/icons/repair.svg" alt="Ремонт под ключ">
+              <h3>Малярные работы и ремонт под ключ</h3>
+              <p>Выполняем как отдельные малярные работы, так и полный ремонт квартир и домов.</p>
+            </div>
+
+            <div class="advantages__item">
+              <img src="/img/icons/trust.svg" alt="Надежность">
+              <h3>Надежность</h3>
+              <p>Все проекты выполняем ответственно, клиенты остаются довольны результатом.</p>
+            </div>
+
+            <div class="advantages__item">
+              <img src="/img/icons/support.svg" alt="Поддержка">
+              <h3>Поддержка и консультации</h3>
+              <p>Всегда готовы проконсультировать по любому вопросу ремонта.</p>
+            </div>
           </div>
         </div>
       </section>
