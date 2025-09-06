@@ -7,6 +7,18 @@ burger.addEventListener('click', () => {
   headerContent.classList.toggle('active')
 })
 
+// Изменение текста в таблице
+function updateInvid() {
+  const el = document.querySelector('.services__invid')
+  if (window.innerWidth <= 700) {
+    el.textContent = 'Индив.'
+  } else {
+    el.textContent = 'Индивидуально'
+  }
+}
+updateInvid()
+window.addEventListener('resize', updateInvid)
+
 // Галерея (Fancybox)
 Fancybox.bind('[data-fancybox="gallery"]', {
   placeFocusBack: false
