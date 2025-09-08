@@ -128,12 +128,64 @@
 </head>
 
 <body>
+  <div class="alert">
+    <div class="alert__overlay"></div>
+    <div class="alert__content">
+      <svg id="success" viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient gradientUnits="userSpaceOnUse" y2="37.081" y1="10.918" x2="10.918" x1="37.081"
+          id="SVGID_1__8tZkVc2cOjdg_gr1">
+          <stop stop-color="#60fea4" offset="0"></stop>
+          <stop stop-color="#6afeaa" offset=".033"></stop>
+          <stop stop-color="#97fec4" offset=".197"></stop>
+          <stop stop-color="#bdffd9" offset=".362"></stop>
+          <stop stop-color="#daffea" offset=".525"></stop>
+          <stop stop-color="#eefff5" offset=".687"></stop>
+          <stop stop-color="#fbfffd" offset=".846"></stop>
+          <stop stop-color="#fff" offset="1"></stop>
+        </linearGradient>
+        <circle fill="url(#SVGID_1__8tZkVc2cOjdg_gr1)" r="18.5" cy="24" cx="24"></circle>
+        <path
+          d="M35.401,38.773C32.248,41.21,28.293,42.66,24,42.66C13.695,42.66,5.34,34.305,5.34,24	c0-2.648,0.551-5.167,1.546-7.448"
+          stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#10e36c"
+          fill="none"></path>
+        <path
+          d="M12.077,9.646C15.31,6.957,19.466,5.34,24,5.34c10.305,0,18.66,8.354,18.66,18.66	c0,2.309-0.419,4.52-1.186,6.561"
+          stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#10e36c"
+          fill="none"></path>
+        <polyline points="16.5,23.5 21.5,28.5 32,18" stroke-width="3" stroke-miterlimit="10" stroke-linejoin="round"
+          stroke-linecap="round" stroke="#10e36c" fill="none"></polyline>
+      </svg>
+      <svg id="error" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="errorGradient" gradientUnits="userSpaceOnUse" x1="10.918" y1="37.081" x2="37.081"
+          y2="10.918">
+          <stop offset="0" stop-color="#ff6b6b" />
+          <stop offset="0.2" stop-color="#ff7a7a" />
+          <stop offset="0.4" stop-color="#ff8a8a" />
+          <stop offset="0.6" stop-color="#ffa0a0" />
+          <stop offset="0.8" stop-color="#ffb3b3" />
+          <stop offset="1" stop-color="#ffc6c6" />
+        </linearGradient>
+        <circle fill="url(#errorGradient)" cx="24" cy="24" r="18.5" />
+        <path d="M35.401,38.773C32.248,41.21,28.293,42.66,24,42.66C13.695,42.66,5.34,34.305,5.34,24
+           c0-2.648,0.551-5.167,1.546-7.448" stroke="#ff1e1e" stroke-width="3" stroke-miterlimit="10"
+          stroke-linejoin="round" stroke-linecap="round" fill="none" />
+        <path d="M12.077,9.646C15.31,6.957,19.466,5.34,24,5.34c10.305,0,18.66,8.354,18.66,18.66
+           c0,2.309-0.419,4.52-1.186,6.561" stroke="#ff1e1e" stroke-width="3" stroke-miterlimit="10"
+          stroke-linejoin="round" stroke-linecap="round" fill="none" />
+        <line x1="18" y1="18" x2="30" y2="30" stroke="#ff1e1e" stroke-width="3" stroke-linecap="round" />
+        <line x1="30" y1="18" x2="18" y2="30" stroke="#ff1e1e" stroke-width="3" stroke-linecap="round" />
+      </svg>
+      <h5 id="result"></h5>
+    </div>
+  </div>
+
   <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo-wrapper" href="/">
-            <img class="header__logo" src="/img/logo.png" alt="Ремонт в РнД — ремонт и малярные работы в Ростове-на-Дону">
+            <img class="header__logo" src="/img/logo.png"
+              alt="Ремонт в РнД — ремонт и малярные работы в Ростове-на-Дону">
             <h2 class="header__title">Ремонт в РнД</h2>
           </a>
 
@@ -216,7 +268,7 @@
               </div>
             </div>
 
-            <img class="hero__img" src="/img/hero-img.png" alt="">
+            <img class="hero__img" src="/img/hero-img.png" alt="Малярный валик для покраски стен">
           </div>
         </div>
       </section>
@@ -230,24 +282,20 @@
           <div class="about__inner">
             <img class="about__img" src="/img/about-img.jpg" alt="">
             <div class="about__content">
-              <p><strong>Мы специализируемся на малярных и отделочных работах</strong> в Ростове-на-Дону. За время
-                работы мы помогли
-                многим клиентам обновить квартиры и дома — от аккуратного косметического ремонта до комплексной
-                отделки помещений.</p>
-              <h3>Нам доверяют, потому что мы:</h3>
+              <p><strong>Мы специализируемся на малярных и отделочных работах</strong> в Ростове-на-Дону.
+                Помогаем клиентам обновлять квартиры и дома — от косметики до комплексного ремонта.</p>
+
+              <h3>Почему выбирают нас:</h3>
               <ul>
-                <li><strong>Работаем аккуратно и чисто</strong> — не оставляем следов после ремонта</li>
+                <li><strong>Аккуратность</strong> — работаем чисто, без лишних следов</li>
                 <li><strong>Соблюдаем сроки</strong> — ценим ваше время</li>
-                <li>Используем только <strong>проверенные материалы</strong></li>
-                <li>Всегда ориентируемся на <strong>результат</strong>, который будет <strong>радовать заказчика долгие
-                    годы</strong></li>
+                <li><strong>Надёжные материалы</strong> — только проверенные бренды</li>
+                <li><strong>Результат надолго</strong> — ремонт радует годами</li>
               </ul>
-              <p>Мы предлагаем не только отдельные <strong>малярные услуги</strong>, такие как грунтовка, шпатлевка,
-                поклейка обоев и
-                покраска стен, но и <strong>ремонт под ключ</strong> — полный цикл работ от подготовки поверхности до
-                завершения интерьера.</p>
-              <blockquote>Наши работы — это живые примеры, которые вы можете увидеть в портфолио на сайте. Каждое фото —
-                подтверждение качества и ответственного подхода.</blockquote>
+
+              <p>Делаем как отдельные <strong>малярные услуги</strong> — грунтовку, шпатлёвку, поклейку обоев, покраску
+                стен,
+                так и <strong>ремонт под ключ</strong> с полным циклом работ.</p>
             </div>
           </div>
         </div>
@@ -467,7 +515,91 @@
         </div>
       </section>
 
-      
+      <section class="form" id="form">
+        <div class="container">
+          <div class="form__inner">
+            <div class="form__title-block">
+              <h2>Оставьте свою заявку</h2>
+              <h3>Мы ее рассмотрим и свяжемся в вами в ближайшее время</h3>
+            </div>
+            <form method="POST" id="contact-form">
+              <input type="hidden" name="access_key" value="8f5563de-62be-4123-8fcb-b842321a1ec7">
+              <input type="hidden" name="subject" value="Новая заявка на ремонт">
+              <input type="hidden" name="from_name" value="Remont v RnD">
+
+              <div class="form__inputs">
+                <input type="text" placeholder="Ваше имя *" name="Имя" required>
+                <input type="tel" placeholder="Номер телефона *" name="Номер телефона" id="phone" required
+                  pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+                  title="Введите полный номер телефона, например +7 (999) 123-45-67">
+                <input type="text" placeholder="Телеграм" name="Телеграм">
+              </div>
+
+              <textarea name="Комментарий" placeholder="Комментарий"></textarea>
+
+              <label class="form__checkbox">
+                <input type="checkbox" required>
+                <span class="form__checkbox-checkmark">
+                  <img src="img/form-checkmark.svg" alt="Отметка согласия с политикой конфиденциальности">
+                </span>
+                Я согласен с <a href="#" target="_blank">политикой конфиденциальности</a>
+              </label>
+
+              <button type="submit" class="form__btn">отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="title__block">
+            <h2 class="title">Есть вопросы? — Мы на связи!</h2>
+            <p class="subtitle">Позвоните, напишите в мессенджер — будем рады помоч.</p>
+          </div>
+
+          <div class="contacts__inner">
+            <div class="contacts__left">
+              <ul class="contacts__list">
+                <li class="contacts__list-item">
+                  <div>
+                    <span aria-hidden="true"></span>
+                    <p>Звоните ежедневно</p>
+                  </div>
+                  <a class="contacts__list-item-text contacts__list-item-text--phone" href="tel:+79612929996">+7 (961) 292 99 96</a>
+                </li>
+
+                <li class="contacts__list-item">
+                  <div>
+                    <span aria-hidden="true"></span>
+                    <p>Адрес</p>
+                  </div>
+                  <address class="contacts__list-item-text">Работаем по всему Ростову-на-Дону</address>
+                </li>
+
+                <li class="contacts__list-item">
+                  <div>
+                    <span aria-hidden="true"></span>
+                    <p>Есть вопрос? Задайте онлайн</p>
+                  </div>
+                  <a class="contacts__list-item-link" href="https://t.me/andrey_remont161" target="_blank">Telegram</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contacts__right">
+              <div style="position:relative;overflow:hidden;"><a
+                  href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps"
+                  style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a
+                  href="https://yandex.ru/maps/39/rostov-na-donu/?ll=39.718813%2C47.222109&utm_medium=mapframe&utm_source=maps&z=12"
+                  style="color:#eee;font-size:12px;position:absolute;top:14px;">Карта Ростова-на-Дону с улицами и
+                  номерами домов — Яндекс Карты</a><iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=39.718813%2C47.222109&z=12" width="560" height="400"
+                  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
