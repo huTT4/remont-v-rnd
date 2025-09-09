@@ -130,10 +130,10 @@ section {
 
 .header {
   padding: 20px 0;
-  box-shadow: 0 2px 20px rgba(255, 144, 16, 0.5);
+  box-shadow: 0 2px 20px rgba(255, 144, 16, 0.4);
   position: relative;
   z-index: 2;
-  border-bottom: 3px solid var(--mainColor);
+  border-bottom: 2px solid var(--mainColor);
 }
 
 .header__inner {
@@ -187,6 +187,7 @@ section {
 
 .header__nav a:hover {
   color: var(--mainColor);
+  transform: translateY(-2px);
 }
 
 .header__social {
@@ -207,31 +208,37 @@ section {
 }
 
 .header__social-tg {
+  display: block;
   width: 40px;
   height: 40px;
   transition: var(--duration);
 }
 
 .header__social-tg:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .header__social-tg:active {
   transform: scale(.95);
 }
 
-.header__social a img {
+.header__social-tg img {
   width: 40px;
   height: 40px;
 }
 
 @media ((min-width: 1100px) and (max-width: 1360px)) {
+  .header {
+    padding: 15px 0;
+    border-width: 1.5px;
+  }
+
   .header__logo {
-    width: 35px;
+    width: 33px;
   }
 
   .header__title {
-    font-size: 20px;
+    font-size: 16.5px;
   }
 
   .header__nav a {
@@ -744,13 +751,14 @@ body:has(.burger.active) {
 }
 
 .about__content ul li {
-  font-size: 18px;
+  font-size: 19px;
   list-style-type: decimal;
   margin-left: 22px;
 }
 
 .about__content strong {
-  font-weight: 500;
+  font-weight: 400;
+  color: #ff8000;
 }
 
 .about__content blockquote {
@@ -952,7 +960,7 @@ body:has(.burger.active) {
 }
 
 .services__table strong {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .services__highlight td {
@@ -962,7 +970,7 @@ body:has(.burger.active) {
 .services__note {
   margin-top: 20px;
   padding: 16px;
-  background: #f9f9f9;
+  background: #fff;
   border-left: 4px solid var(--mainColor);
   border-radius: 8px;
   font-size: 15px;
@@ -1763,7 +1771,7 @@ body:has(.burger.active) {
 /* ============================================= CONTACTS ============================================= */
 /* ============================================= CONTACTS ============================================= */
 .contacts {
-  padding-top: 60px;
+  padding: 60px 0 40px;
 }
 
 .contacts__inner {
@@ -1774,7 +1782,7 @@ body:has(.burger.active) {
 .contacts__left {
   border-radius: var(--radius-lg);
   padding: 48px 40px;
-  max-width: 522px;
+  max-width: 475px;
   width: 100%;
   background: #fff;
 }
@@ -1865,7 +1873,7 @@ body:has(.burger.active) {
 
 @media ((min-width: 1100px) and (max-width: 1360px)) {
   .contacts {
-    padding-top: 45px;
+    padding: 45px 0 40px;
   }
 
   .contacts__inner {
@@ -1932,6 +1940,10 @@ body:has(.burger.active) {
 }
 
 @media (max-width: 500px) {
+  .contacts {
+    padding-top: 50px;
+  }
+
   .contacts__left {
     padding: 30px;
   }
@@ -1971,6 +1983,185 @@ body:has(.burger.active) {
 /* ============================================= FOOTER ============================================= */
 /* ============================================= FOOTER ============================================= */
 /* ============================================= FOOTER ============================================= */
+.footer {
+  box-shadow: 0 2px 20px rgba(255, 144, 16, 0.4);
+  border-top: 2px solid var(--mainColor);
+}
+
+.footer__top {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__info-descr {
+  font-size: 16px;
+  color: #777;
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer__contacts div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__contacts-city {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.footer__bottom p,
+.footer__bottom a {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer__bottom a {
+  transition: var(--duration);
+  border-bottom: 1px solid #777;
+  line-height: 100%;
+}
+
+.footer__bottom a:hover {
+  color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+@media ((min-width: 1100px) and (max-width: 1360px)) {
+  .footer {
+    border-width: 1.5px;
+  }
+
+  .footer__top {
+    padding: 18.75px 0;
+    gap: 18.75px;
+  }
+
+  .footer__info {
+    gap: 3.75px;
+  }
+
+  .footer__info-descr {
+    font-size: 12px;
+  }
+
+  .footer__contacts-city {
+    font-size: 13.5px;
+  }
+
+  .footer__bottom {
+    gap: 22.5px;
+    padding: 11.25px 0;
+  }
+
+  .footer__bottom p,
+  .footer__bottom a {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+  }
+
+  .footer__nav a {
+    font-size: 20px;
+  }
+
+  .footer__social-phone {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer__nav {
+    gap: 10px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "info contacts"
+      "nav nav";
+    gap: 20px;
+  }
+
+  .footer__info {
+    grid-area: info;
+  }
+
+  .footer__contacts {
+    grid-area: contacts;
+    justify-self: end;
+  }
+
+  .footer__nav {
+    grid-area: nav;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__info {
+    align-items: center;
+  }
+
+  .footer__info-descr {
+    text-align: center;
+  }
+
+  .footer__nav {
+    gap: 10px 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 /* ============================================= TO TOP ============================================= */
 /* ============================================= TO TOP ============================================= */
@@ -1980,7 +2171,7 @@ body:has(.burger.active) {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   background: var(--mainColor);
   z-index: 100;
   width: 48px;
@@ -2013,6 +2204,13 @@ body:has(.burger.active) {
   transform: scale(.95) translateY(0);
   box-shadow: none;
   background: #ff962d;
+}
+
+@media ((min-width: 1100px) and (max-width: 1360px)) {
+  .to-top {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 /* ============================================= ALERT ============================================= */

@@ -92,6 +92,8 @@ const alertSuccesImg = document.getElementById('success')
 const alertErrorImg = document.getElementById('error')
 const result = document.getElementById('result')
 
+let timeout = null
+
 form.addEventListener('submit', function (e) {
   e.preventDefault()
   const formData = new FormData(form)
@@ -132,7 +134,7 @@ form.addEventListener('submit', function (e) {
     })
     .then(function () {
       form.reset()
-      setTimeout(() => {
+      timeout = setTimeout(() => {
         alert.classList.remove('active')
       }, 3000)
     })
@@ -141,5 +143,6 @@ form.addEventListener('submit', function (e) {
 // Закрытие уведомления (модалки) при клике по оверлею
 const alertOverlay = document.querySelector('.alert__overlay')
 alertOverlay.addEventListener('click', () => {
+  clearTimeout(timeout)
   alert.classList.remove('active')
 })
