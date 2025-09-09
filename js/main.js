@@ -7,6 +7,22 @@ burger.addEventListener('click', () => {
   headerContent.classList.toggle('active')
 })
 
+// ============================== Кнопка для скролла (TO TOP) ==============================
+const toTop = document.querySelector('.to-top')
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 200) {
+    toTop.classList.add('show')
+  } else {
+    toTop.classList.remove('show')
+  }
+})
+
+toTop.addEventListener('click', function (e) {
+  e.preventDefault()
+  window.scrollTo({ top: 0 })
+})
+
 //  =========================Изменение текста в таблице =========================
 function updateInvid() {
   const el = document.querySelector('.services__invid')

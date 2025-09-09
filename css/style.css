@@ -462,7 +462,7 @@ body:has(.burger.active) {
 }
 
 .hero__btn--primary:active {
-  transform: translateY(0);
+  transform: scale(.97);
   box-shadow: none;
   background-color: #ff962d;
   border-color: #ff962d;
@@ -1521,7 +1521,7 @@ body:has(.burger.active) {
 }
 
 .form__btn:active {
-  transform: translateY(0);
+  transform: scale(.97);
   box-shadow: none;
   background: #ff962d;
 }
@@ -1966,6 +1966,53 @@ body:has(.burger.active) {
   .contacts__left {
     padding: 20px;
   }
+}
+
+/* ============================================= FOOTER ============================================= */
+/* ============================================= FOOTER ============================================= */
+/* ============================================= FOOTER ============================================= */
+
+/* ============================================= TO TOP ============================================= */
+/* ============================================= TO TOP ============================================= */
+/* ============================================= TO TOP ============================================= */
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+  background: var(--mainColor);
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0);
+  transition: var(--duration);
+  box-shadow: 0 4px 12px rgba(255, 123, 0, 0.4);
+}
+
+.to-top img {
+  width: 75%;
+}
+
+.to-top.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.to-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 123, 0, 0.6);
+}
+
+.to-top:active {
+  transform: scale(.95) translateY(0);
+  box-shadow: none;
+  background: #ff962d;
 }
 
 /* ============================================= ALERT ============================================= */
